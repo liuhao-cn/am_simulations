@@ -9,15 +9,15 @@ import struct
 import glob
 
 # 运行参数设置
-NUM_CONFIGS_PER_TEMPLATE = 100  # 每个配置文件模板生成的配置文件数量
-START_FREQ = 30  # 起始频率，GHz
-END_FREQ = 500  # 结束频率，GHz
-FREQ_RES = 10  # MHz
-ZENITH_ANGLE = 0.0  # 天顶角，度
-H2O_SCALE_MIN = 0.1  # 水汽缩放因子最小值
-H2O_SCALE_MAX = 1.0  # 水汽缩放因子最大值
-MIN_HEIGHT = None  # 最小高度阈值，None表示不限制
-MAX_PLOT_CONFIGS = 100  # 最大绘图配置数量
+NUM_CONFIGS_PER_TEMPLATE = 100     # 每个配置文件模板生成的配置文件数量
+START_FREQ = 30                    # 起始频率，GHz
+END_FREQ = 500                     # 结束频率，GHz
+FREQ_RES = 100                     # MHz
+ZENITH_ANGLE = 0.0                 # 天顶角，度
+H2O_SCALE_MIN = 0.1                # 水汽缩放因子最小值
+H2O_SCALE_MAX = 1.0                # 水汽缩放因子最大值
+MIN_HEIGHT = None                  # 最小高度阈值，None表示不限制
+MAX_PLOT_CONFIGS = 100             # 最大绘图配置数量
 OUTPUT_DIR = 'simulation_results'  # 统一输出目录
 
 # 注意：生成的 amc 配置文件将保留在 generated_configs 目录中，不会被自动删除
